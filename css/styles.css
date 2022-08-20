@@ -47,3 +47,20 @@ body {
 .link-contact:focus {
   color: #2196f3;
 }
+.header-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2.25em;
+  color: #212121;
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 1, 9em;
+}
+.end {
+  background-color: #2f303a;
+}
+.multicolor-end {
+  color: #ffffff;
+}
+.

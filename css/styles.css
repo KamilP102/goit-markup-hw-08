@@ -66,3 +66,12 @@ body {
 .address {
   color: #fff;
 }
+.header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 3.75em;
+  color: #fff;
+}
+.header-section {
+  background-color: #2f303a;
+}

@@ -27,11 +27,16 @@ body {
   line-height: 1.6;
   color: #212121;
 }
+.btn {
+  background-color: Transparent;
+  border: none;
+}
 .btn:hover,
 .btn:focus {
   background: #2196f3;
   color: #fff;
   cursor: pointer;
+  border: none;
 }
 .multicolor-txt {
   color: #2196f3;
@@ -74,4 +79,39 @@ body {
 }
 .header-section {
   background-color: #2f303a;
+}
+.button-main {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  background-color: #2196f3;
+  border: none;
+  cursor: pointer;
+}
+.header-title-main {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.paragraph-main {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.header-second {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 2.625em;
+  color: #212121;
+}
+.team{
+  font-weight: 500;
+font-size: 16px;
+line-height: 1.1875em;
+color:#212121
+}
+.team-position{
+  font-size: 16px;
+line-height: 1.1875em
 }

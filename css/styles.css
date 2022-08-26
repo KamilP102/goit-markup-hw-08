@@ -36,6 +36,16 @@ body {
   color: #212121;
 }
 .btn {
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 6px 15px 6px 15px;
+  line-height: 1.6;
+  width: 121px;
+  height: 38px;
+  background-color:#F5F4FA;
+  margin:4px;
+  border-radius: 4px;
 }
 .btn:hover,
 .btn:focus {
@@ -43,6 +53,9 @@ body {
   color: #fff;
   cursor: pointer;
   border: none;
+  border-radius: 4px;
+  width: 121px;
+  height: 38px;
 }
 .multicolor-txt {
   color: #2196f3;
@@ -62,12 +75,16 @@ body {
 .header-title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2.25em;
+  line-height: 2;
   color: #212121;
+  padding: 20px 24px 20px 24px;
+  margin:0px;
 }
 .paragraph {
   font-size: 16px;
-  line-height: 1, 9em;
+  line-height: 1, 8;
+  padding: 20px 24px 20px 24px;
+  margin:0px;
 }
 .multicolor-end {
   color: #ffffff;
@@ -126,10 +143,6 @@ body {
   font-size: 16px;
   line-height: 1.1875em;
 }
-
-.container {
-  width: 1200px;
-}
 .navigation {
   display: flex;
   list-style: none;
@@ -155,6 +168,7 @@ body {
 .container-header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
 }
 .button-section {
   display: flex;
@@ -181,6 +195,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   margin: 4px 15px 0px 15px;
+  text-align: center;
 }
 .team-photos {
   display: flex;
@@ -211,4 +226,28 @@ body {
 }
 .end-address {
   margin: 0px 25px 60px 15px;
+}
+.section-color-team {
+  background-color: #f5f4fa;
+  width: 1200px;
+}
+.btn-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  background:
+}
+.img-grid {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  padding: 0px;
+  gap: 30px;
+  column-gap: 30px;
+}
+.img-grid-item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  border: 1px solid #eeeeee;
 }

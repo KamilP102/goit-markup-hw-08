@@ -8,19 +8,26 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <header>
+  <body></body>
+    <header class="header-page">
+      <div class="container container-header">
       <a class="logo-link" href="./index.html"
         ><span class="multicolor-txt">Web</span>Studio</a
       >
       <nav>
-        <a class="link" href="">Agencja</a>
-        <a class="link" href="./portfolio.html"> Portfolio </a>
-        <a class="link" href="">Kontakt</a>
+        <ul class="navigation">
+          <li><a class="link" href="">Agencja</a></li>
+          <li><a class="link" href="./portfolio.html"> Portfolio </a></li>
+          <li><a class="link" href="">Kontakt</a></li>
+        </ul>
       </nav>
-      <ul>
+      <ul class="contact-list">
         <li>
           <a class="link-contact" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
@@ -31,53 +38,46 @@
           <a class="link-contact" href="tel:+48111111111">+48 111 111 111 </a>
         </li>
       </ul>
+      </div>
     </header>
     <main>
-      <section class="header-section">
-        <h1 class="header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <section class="section">
+        <p class="header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</p>
         <button class="button-main" type="button">Zamów usługe</button>
       </section>
-      <section>
-        <ul>
-          <li>
+      <section class="section">
+        <ul class="paragraph-list">
+          <li class="paragraph-list-item">
             <h3 class="header-title-main">Lorem Ipsum</h3>
             <p class="paragraph-main">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-              dolorem animi ipsam commodi sit. Autem neque quo harum
-              exercitationem nam ratione quis magnam quisquam nobis officiis,
-              mollitia incidunt repellat facere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="paragraph-list-item">
             <h3 class="header-title-main">Lorem Ipsum</h3>
             <p class="paragraph-main">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-              dolorem animi ipsam commodi sit. Autem neque quo harum
-              exercitationem nam ratione quis magnam quisquam nobis officiis,
-              mollitia incidunt repellat facere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="paragraph-list-item">
             <h3 class="header-title-main">Lorem Ipsum</h3>
             <p class="paragraph-main">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-              dolorem animi ipsam commodi sit. Autem neque quo harum
-              exercitationem nam ratione quis magnam quisquam nobis officiis,
-              mollitia incidunt repellat facere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="paragraph-list-item">
             <h3 class="header-title-main">Lorem Ipsum</h3>
             <p class="paragraph-main">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia
-              dolorem animi ipsam commodi sit. Autem neque quo harum
-              exercitationem nam ratione quis magnam quisquam nobis officiis,
-              mollitia incidunt repellat facere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <h2 class="header-second">Czym się zajmujemy</h2>
         <ul>
           <li>
@@ -106,7 +106,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="section">
         <h2 class="header-second">Nasz zespół</h2>
         <ul>
           <li>

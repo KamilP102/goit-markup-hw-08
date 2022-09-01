@@ -67,11 +67,12 @@ body {
   font-size: 14px;
   line-height: 1;
   color: #757575;
-  padding: 0px 25px 0px 25px;
+  padding: 0px 25px 0px 10px;
 }
 .link-contact:hover,
 .link-contact:focus {
   color: #2196f3;
+
 }
 .header-title {
   font-weight: 700;
@@ -139,10 +140,12 @@ body {
   font-size: 16px;
   line-height: 1.1875em;
   color: #212121;
+  margin: 30px 99px 10px 99px;
 }
 .team-position {
   font-size: 16px;
   line-height: 1.1875em;
+  margin:0 auto;
 }
 .navigation {
   display: flex;
@@ -164,7 +167,7 @@ body {
 }
 .paragraph-list-item {
   text-align: left;
-  padding: 0px 15px 0px 15px;
+  margin:0px 15px 0px 15px;
 }
 .container-header {
   display: flex;
@@ -264,6 +267,37 @@ color: #212121;
   max-width: 1600px;
   margin:0 auto;
 }
-.icon{
-  background-color:#F5F4FA ;
+.feats-icon{
+margin:0px 15px 0px 15px;
+background-color:#F5F4FA;
+border-radius: 4px;
+}
+.astronaut-1{
+  margin:0px 0px 0px 15px;
+}
+.social-icons{
+  margin:16px 32px 18px 32px;
+}
+.social-icon{
+  border-radius: 50%;
+  fill:#757575
+}
+.social-icon:hover,
+.social-icon:focus{
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.contact-icons:hover{
+  fill: #2196f3;
+}
+.contact-icons:hover .link-contact{
+  color: #2196f3;
+}
+.company-icons:{
+  border:2px solid black;
+  width:170;
+  height:92;
+}
+.company-list{
+  display:flex;
 }

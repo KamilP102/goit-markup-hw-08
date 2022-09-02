@@ -62,6 +62,9 @@ body {
   color: #2196f3;
 }
 .link-contact {
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -70,8 +73,9 @@ body {
   padding: 0px 25px 0px 10px;
 }
 .link-contact:hover,
-.link-contact:focus {
+.link-contact:focus  {
   color: #2196f3;
+  fill:#2196f3;
 
 }
 .header-title {
@@ -156,7 +160,8 @@ body {
 .contact-list {
   display: flex;
   list-style: none;
-  margin: 32px 2px 32px 83px;
+  margin: 32px 0px 32px 83px;
+  justify-content: flex-end;
 }
 
 .paragraph-list {
@@ -173,6 +178,7 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  justify-content: space-around;
 }
 .button-section {
   display: flex;
@@ -280,12 +286,19 @@ border-radius: 4px;
 }
 .social-icon{
   border-radius: 50%;
-  fill:#757575
+  fill:#757575;
+  text-decoration:none;
 }
-.social-icon:hover,
-.social-icon:focus{
+.social-icon:hover svg,
+.social-icon:focus svg{
   fill: #ffffff;
   background-color: #2196f3;
+}
+.contact-icon{
+  margin:0px 10px 0px 0px;
+}
+.contact-icons{
+  align-items: center;
 }
 .contact-icons:hover{
   fill: #2196f3;

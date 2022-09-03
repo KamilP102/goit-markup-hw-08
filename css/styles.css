@@ -209,6 +209,7 @@ body {
 .team-photos {
   display: flex;
   padding: 0px;
+  justify-content: space-between;
 }
 .logo-link-end {
   font-family: "Raleway";
@@ -221,8 +222,6 @@ body {
 }
 .end-container {
   background-color: #2f303a;
-  display: flex;
-  flex-direction: column;
 }
 .end-contact {
   text-decoration: none;
@@ -313,4 +312,29 @@ border-radius: 4px;
 }
 .company-list{
   display:flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+.company-icons{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  list-style: none;
+  width: 170px;
+  height: 92px;
+}
+.company-icon{
+  fill:#AFB1B8
+}
+.company-icon:hover svg{
+  fill:#2196f3;
+}
+.company-icon:focus svg{
+  fill:#2196f3;
+  border: 1px solid #2196f3;
+}
+.company-icons:hover{
+  border: 1px solid #2196f3;
 }

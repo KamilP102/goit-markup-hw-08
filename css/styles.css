@@ -35,6 +35,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #212121;
+  padding-bottom:50px;
 }
 .btn {
   border: none;
@@ -233,9 +234,7 @@ body {
   padding: 9px 0px 9px 0px;
   display:block;
 }
-.end-address {
- 
-}
+
 .section-color-team {
   background-color: #f5f4fa;
 }
@@ -245,7 +244,6 @@ body {
   justify-content: center;
   padding: 0px;
   margin: 0px;
-  background: ;
 }
 .img-grid {
   display: flex;
@@ -262,7 +260,6 @@ body {
 }
 .img-grid-item {
   flex-basis: calc((100% - 3 * 30px) / 3);
-  border: 1px solid #eeeeee;
 }
 .clients-header{
   font-weight: 700;
@@ -377,3 +374,7 @@ border-radius: 4px;
   fill:white;
   background-color:#2196f3;
 }
+.grid-txt{
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;

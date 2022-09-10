@@ -49,7 +49,7 @@
       <section class="section header-section">
         <div class="container button-section">
         <p class="header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</p>
-        <button class="button-main" type="button">Zamów usługe</button>
+        <button class="button-main" type="button"data-modal-open>Zamów usługe</button>
         </div>
       </section>
       <section class="section">
@@ -354,5 +354,12 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-close"data-modal-close>X</button>
+      </div>
+
+    </div>
+     <script src="js/modal.js"></script>
   </body>
 </html>

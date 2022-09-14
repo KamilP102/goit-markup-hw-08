@@ -577,6 +577,29 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <div>
+          <p class="modal-paragraph">Zostaw swoje dane w formularzu poniżej</p>
+          <form class="modal-form">
+            <label class="modal-label name-modal">Imię
+            <input class="input-modal" type="text" name="name"/>
+            </label>
+            <label class="modal-label telephon-modal">Telefon
+              <input class="input-modal" type="tel" name="phone"/>
+              </label>
+              <label class="modal-label email-modal">Email
+                <input class="input-modal" type="email" name="email"/>
+              </label>
+              <label class="modal-label">
+                Komentarz
+                <input class="input-modal comment-modal" type="textarea" name="comment" placeholder="Wprowadź tekst"/>
+              </label>
+              <div class=checkbox-form >
+              <label for="checkbox-modal">Oświadczam iż akceptuję <a href="">Regulamin<a> i <a href="">Politykę Prywatności.</a></label>
+              <input type="checkbox" name="checkbox" value="accept" id="checkbox-modal"/>
+              </div>
+              <button class="modal-btn" type="submit">Wyślij</button>
+          </form>
+        </div>
         <button type="button" class="btn-close" data-modal-close>X</button>
       </div>
     </div>

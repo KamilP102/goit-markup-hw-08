@@ -608,12 +608,13 @@ body {
   border: none;
   cursor: pointer;
   margin: 30px 124px 40px 124px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
 }
 .modal-btn:hover,
 .modal-btn:focus {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: inset -2px 1px 42px -17px rgba(66, 68, 90, 1);
+
 }
 .modal-svg {
   position: absolute;
@@ -665,10 +666,12 @@ body {
 .checkbox-input:checked + .checkbox-label::before {
   background-color: #2196f3;
   border: none;
-  background-image: url(./Vector.svg);
+  background-image:url(/images/checkmark.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  width:16px;
+  height:16px;
 }
 .checkbox-input {
   appearance: none;

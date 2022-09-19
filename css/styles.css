@@ -340,7 +340,7 @@ body {
 .contact-icons:hover .link-contact {
   color: #2196f3;
 }
-.company-icons: {
+.company-icons{
   border: 2px solid black;
   width: 170;
   height: 92;
@@ -442,13 +442,13 @@ body {
   visibility: hidden;
 }
 .txt-box {
-  width: 370;
-  height: 70;
+  width: 370px;
+  height: 70px;
   position: absolute;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
+  text-align:center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   bottom: -10px;
@@ -460,7 +460,8 @@ body {
   padding: 27px 90px;
 }
 .txt-box-2 {
-  padding: 27px 113px;
+  padding:27px 0px;
+  width:370px;
 }
 .txt-box-3 {
   padding: 27px 94px;
@@ -527,7 +528,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #ffffff;
-  margin-right: 20px;
+  margin-right: 12px;
   padding-left: 16px;
 }
 .submit-newsletter-btn {

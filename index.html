@@ -582,7 +582,7 @@
           <form class="modal-form">
             <label class="modal-label name-modal">
                Imię
-            <input class="input-modal" type="text" name="name"/>
+            <input class="input-modal" type="text" name="name" required/>
             <svg class="modal-svg">
                 <use href="./images/icons.svg#icon-Human" width="12" height="12">
                 </use>
@@ -590,17 +590,17 @@
             </label>
             <label class="modal-label telephon-modal">
               Telefon
-              <input class="input-modal" type="tel" name="phone"/>
+              <input class="input-modal" type="tel" name="phone" required/>
               <svg class="modal-svg">
-                <use href="./images/icons.svg#icon-Phone" width="12" height="12">
+                <use href="./images/icons.svg#icon-Phone" width="13" height="13">
                 </use>
               </svg>
               </label>
               <label class="modal-label email-modal">
                 Email
-                <input class="input-modal" type="email" name="email"/>
+                <input class="input-modal" type="email" name="email" required/>
                 <svg class="modal-svg">
-                <use href="./images/icons.svg#icon-Mail" width="12" height="12">
+                <use href="./images/icons.svg#icon-Mail" width="15" height="12">
                 </use>
               </svg>
               </label>
@@ -612,8 +612,8 @@
                 <input class="checkbox-input" type="checkbox" name="Privet Policy" value="" id="checkbox-modal"/>
               <label class="checkbox-label" for="checkbox-modal">Oświadczam iż akceptuję <a class="modal-link" href="">Regulamin<a> i <a class="modal-link" href="">Politykę Prywatności.</a></label>
               </div>
-              <button class="modal-btn" type="submit">Wyślij</button>
           </form>
+          <button class="modal-btn" type="submit">Wyślij</button>
         </div>
         <button type="button" class="btn-close" data-modal-close>X</button>
       </div>

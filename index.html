@@ -17,32 +17,36 @@
   </head>
   <body>
     <header class="header-page">
-      <div class="container container-header">
-        <a class="logo-link" href=""
-          ><span class="multicolor-txt">Web</span>Studio</a
+      <div class="container header-page__container">
+        <a class="header-page__logo-link" href=""
+          ><span class="header-page__logo-link--multicolor-txt">Web</span>Studio</a
         >
         <nav>
-          <ul class="navigation">
-            <li><a class="link active-cur" href="./index.html">Agencja</a></li>
+          <ul class="nav">
             <li>
-              <a class="link active" href="./portfolio.html"> Portfolio </a>
+              <a class="nav__link nav__active-cur" href="./index.html">Agencja</a>
             </li>
-            <li><a class="link active" href="">Kontakt</a></li>
+            <li>
+              <a class="nav__link" href="./portfolio.html"> Portfolio </a>
+            </li>
+            <li>
+              <a class="nav__link" href="">Kontakt</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-list">
-          <li class="contact-icons">
-            <a class="link-contact" href="mailto:info@devstudio.com"
+          <li class="contact-list__item">
+            <a class="contact-list__link" href="mailto:info@devstudio.com"
               >info@devstudio.com
-              <svg class="contact-icon" width="16" height="12">
+              <svg class="contact-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope-2"></use>
               </svg>
             </a>
           </li>
-          <li class="contact-icons">
-            <a class="link-contact" href="tel:+48111111111"
+          <li class="contact-list__item">
+            <a class="contact-list__link" href="tel:+48111111111"
               >+48 111 111 111
-              <svg class="contact-icon" width="10" height="16">
+              <svg class="contact-list__icon" width="10" height="16">
                 <use href="images/icons.svg#icon-smartphone"></use>
               </svg>
             </a>
@@ -52,15 +56,15 @@
     </header>
     <main>
       <section class="section header-section">
-        <div class="container button-section">
-          <p class="header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</p>
-          <button class="button-main" type="button" data-modal-open>
+        <div class="container header-section__header-items">
+          <p class="header-section__header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</p>
+          <button class="header-section__btn" type="button" data-modal-open>
             Zamów usługe
           </button>
         </div>
       </section>
       <section class="section">
-        <div class="container icon-container">
+        <div class="container">
           <svg class="feats-icon" width="270" height="120">
             <use
               href="./images/icons.svg#icon-antenna-1"
@@ -98,30 +102,30 @@
             ></use>
           </svg>
           <ul class="paragraph-list">
-            <li class="paragraph-list-item">
-              <h3 class="header-title-main">Lorem Ipsum</h3>
-              <p class="paragraph-main">
+            <li class="paragraph-list__item">
+              <h3 class="paragraph-list__header">Lorem Ipsum</h3>
+              <p class="paragraph-list__txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="paragraph-list-item">
-              <h3 class="header-title-main">Lorem Ipsum</h3>
-              <p class="paragraph-main">
+            <li class="paragraph-list__item">
+              <h3 class="paragraph-list__header">Lorem Ipsum</h3>
+              <p class="paragraph-list__txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="paragraph-list-item">
-              <h3 class="header-title-main">Lorem Ipsum</h3>
-              <p class="paragraph-main">
+            <li class="paragraph-list__item">
+              <h3 class="paragraph-list__header">Lorem Ipsum</h3>
+              <p class="paragraph-list__txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="paragraph-list-item">
-              <h3 class="header-title-main">Lorem Ipsum</h3>
-              <p class="paragraph-main">
+            <li class="paragraph-list__item">
+              <h3 class="paragraph-list__header">Lorem Ipsum</h3>
+              <p class="paragraph-list__txt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
@@ -129,58 +133,58 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section job">
         <div class="container">
-          <h2 class="header-second">Czym się zajmujemy</h2>
-          <ul class="img-list">
-            <li class="img-list-item">
+          <h2 class="job__header">Czym się zajmujemy</h2>
+          <ul class="job__img-list">
+            <li class="img-list__item">
               <img
                 src="./images/keyboard.jpg"
                 alt="Zdjęcie pisania kodu na laptopie"
                 width="370"
                 height="294"
               />
-              <p class="txt-box txt-box-1">Aplikacje komputerowe</p>
+              <p class="job__txt-box job__txt-box-1">Aplikacje komputerowe</p>
             </li>
-            <li class="img-list-item">
+            <li class="img-list__item">
               <img
                 src="./images/phone.jpg"
                 alt="Zdjęcie tworzenia appki mobilnej"
                 width="370"
                 height="294"
               />
-              <p class="txt-box txt-box-2">Aplikacje Mobilne</p>
+              <p class="job__txt-box job__txt-box-2">Aplikacje Mobilne</p>
             </li>
-            <li class="img-list-item">
+            <li class="img-list__item">
               <img
                 src="./images/tablet.jpg"
                 alt="Zdjęcie tworzenia grafiki za pomocą tabletu"
                 width="370"
                 height="294"
               />
-              <p class="txt-box txt-box-3">Rozwiązania Graficzne</p>
+              <p class="job__txt-box job__txt-box-3">Rozwiązania Graficzne</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section section-color-team">
-        <div class="container">
-          <h2 class="header-second">Nasz zespół</h2>
+      <section class="section">
+        <div class="container team">
+          <h2 class="job__header">Nasz zespół</h2>
           <ul class="team-photos">
-            <li class="team-photos-item">
+            <li class="team-photos__item">
               <img
                 src="./images/Johndoe1.jpg"
                 alt="Photo of John Doe"
                 width="270"
                 height="260"
               />
-              <h3 class="team">John Doe</h3>
-              <p class="team-position">Product Designer</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">Product Designer</p>
 
               <div class="social-icons">
-                <a class="social-icon" href="">
+                <a class="social__icon" href="">
                   <svg
-                    class="social-icon icon-instagram"
+                    class="social__icon icon-instagram"
                     width="44"
                     height="44"
                   >
@@ -193,8 +197,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-twitter" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-twitter" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -204,8 +208,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-facebook" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-facebook" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -215,8 +219,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-linkedin" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-linkedin" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -228,19 +232,19 @@
                 </a>
               </div>
             </li>
-            <li class="team-photos-item">
+            <li class="team-photos__item">
               <img
                 src="./images/johndoe2.jpg"
                 alt="Photo of John Doe 2"
                 width="270"
                 height="260"
               />
-              <h3 class="team">John Doe</h3>
-              <p class="team-position">Frontend Developer</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">Frontend Developer</p>
               <div class="social-icons">
-                <a class="social-icon" href="">
+                <a class="social__icon" href="">
                   <svg
-                    class="social-icon icon-instagram"
+                    class="social__icon icon-instagram"
                     width="44"
                     height="44"
                   >
@@ -253,8 +257,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-twitter" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-twitter" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -264,8 +268,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-facebook" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-facebook" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -275,8 +279,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-linkedin" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-linkedin" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -288,19 +292,19 @@
                 </a>
               </div>
             </li>
-            <li class="team-photos-item">
+            <li class="team-photos__item">
               <img
                 src="./images/johndoe3.jpg"
                 alt="Photo of John Doe 3 "
                 width="270"
                 height="260"
               />
-              <h3 class="team">John Doe</h3>
-              <p class="team-position">Marketing</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">Marketing</p>
               <div class="social-icons">
-                <a class="social-icon" href="">
+                <a class="social__icon" href="">
                   <svg
-                    class="social-icon icon-instagram"
+                    class="social__icon icon-instagram"
                     width="44"
                     height="44"
                   >
@@ -313,8 +317,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-twitter" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-twitter" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -324,8 +328,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-facebook" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-facebook" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -335,8 +339,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-linkedin" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-linkedin" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"
@@ -348,19 +352,19 @@
                 </a>
               </div>
             </li>
-            <li class="team-photos-item">
+            <li class="team-photos__item">
               <img
                 src="./images/johndoe4.jpg"
                 alt="Photo of John Doe 4"
                 width="270"
                 height="260"
               />
-              <h3 class="team">John Doe</h3>
-              <p class="team-position">UI Designer</p>
+              <h3 class="team__name">John Doe</h3>
+              <p class="team__position">UI Designer</p>
               <div class="social-icons">
-                <a class="social-icon" href="">
+                <a class="social__icon" href="">
                   <svg
-                    class="social-icon icon-instagram"
+                    class="social__icon icon-instagram"
                     width="44"
                     height="44"
                   >
@@ -373,8 +377,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-twitter" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-twitter" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-twitter-1"
                       width="20"
@@ -384,8 +388,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-facebook" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-facebook" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-facebook-1"
                       width="20"
@@ -395,8 +399,8 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon" href="">
-                  <svg class="social-icon icon-linkedin" width="44" height="44">
+                <a class="social__icon" href="">
+                  <svg class="social__icon icon-linkedin" width="44" height="44">
                     <use
                       href="./images/icons.svg#icon-linkedin-1"
                       width="20"

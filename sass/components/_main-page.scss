@@ -6,13 +6,12 @@
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url(/images/background.jpg);
+    url(../../images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
   padding: 0px;
-
 
   &__header {
     font-weight: 900;
@@ -181,5 +180,3 @@
 .clients__icons:hover {
   border: 1px solid $second-color;
 }
-
-  

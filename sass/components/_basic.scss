@@ -1,0 +1,17 @@
+@import "../utils/variables.scss";
+
+body {
+  font-family: $primary-font, $second-font, sans-serif;
+  color: #757575;
+  margin: 0px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0px 94px 0px;
+}
+.end {
+  background-color: $footer-color;
+}

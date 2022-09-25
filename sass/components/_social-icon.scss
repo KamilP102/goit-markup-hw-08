@@ -1,0 +1,18 @@
+@import "../utils/variables.scss";
+
+.social__icon {
+  border-radius: 50%;
+  fill: $primary-color;
+  text-decoration: none;
+}
+.social__icon:hover svg,
+.social__icon:focus svg {
+  fill: #ffffff;
+  background-color: $second-color;
+}
+.social__icon--white {
+  border-radius: 50%;
+  fill: #ffffff;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
+}

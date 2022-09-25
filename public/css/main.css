@@ -779,7 +779,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-form {
+.checkbox {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -789,25 +789,15 @@ body {
           justify-content: center;
   margin-top: 20px;
 }
-.checkbox-form__input {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.checkbox-form__label {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1, 7;
-}
 
-.checkbox-form::before {
+.checkbox__label::before {
   display: block;
   position: absolute;
   left: 12px;
   top: 0px;
   content: "";
   width: 16px;
-  height: 16px;
+  height: 15px;
   border: 1px solid #212121;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -815,10 +805,10 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-form__input:checked + .checkbox-form__label::before {
+.checkbox__input:checked + .checkbox__label::before {
   background-color: #2196f3;
   border: none;
-  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -828,4 +818,22 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.checkbox__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 7;
+}
+
+.modal__link {
+  color: #2196f3;
+  font-weight: 400;
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

@@ -12,20 +12,19 @@
   max-width: 1600px;
   margin: 0 auto;
   padding: 0px;
-
-  &__header {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.5;
-    color: #fff;
-    text-align: center;
-    margin: 200px 252px 30px 252px;
-  }
-  &__header-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+}
+.header-section__header {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  margin: 200px 252px 30px 252px;
+}
+.header-section__header-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .header-section__btn {
   margin: 0px 500px 200px 500px;

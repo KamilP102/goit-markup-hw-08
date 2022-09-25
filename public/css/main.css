@@ -40,10 +40,32 @@ body {
       justify-content: space-around;
 }
 
+.header-section__header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .multicolor--txt {
   color: #2196f3;
 }
 
+.nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
 .nav__link {
   position: relative;
   width: 100%;
@@ -54,10 +76,10 @@ body {
   text-decoration: none;
   padding: 0px 23px 0px 23px;
 }
-.nav__link__link:hover, .nav__link__link:focus {
+.nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
-.nav__link__active-cur::after {
+.nav__active-cur::after {
   color: #2196f3;
   display: block;
   content: "";
@@ -132,8 +154,8 @@ body {
 }
 
 .header-section {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(../images/background.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/background.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -179,6 +201,10 @@ body {
   margin: 0px 15px 0px 15px;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+.astronaut-1 {
+  margin: 0px 0px 0px 15px;
 }
 
 .paragraph-list {
@@ -416,13 +442,19 @@ body {
           transform: translateY(0);
 }
 
-.img-grid__overlay {
-  overflow: hidden;
-  position: relative;
-  width: 370px;
-  height: 294px;
+.overlay-hidden {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0px;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
 }
-
 .overlay-hidden__txt {
   font-weight: 400;
   font-size: 18px;
@@ -430,6 +462,13 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   padding: 49px 45px 49px 24px;
+}
+
+.img-grid__overlay {
+  overflow: hidden;
+  position: relative;
+  width: 370px;
+  height: 294px;
 }
 
 .grid-txt {
@@ -469,6 +508,26 @@ body {
   fill: #ffffff;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.end__logo--multicolor-txt {
+  color: #ffffff;
+}
+
+.end-icons {
+  padding: 0px 0px 0px 70px;
+}
+.end-icons__header {
+  line-height: 1.14;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.end__logo {
+  margin-left: 0px;
 }
 
 .address__name {
@@ -696,8 +755,10 @@ body {
 }
 
 .modal-form__svg {
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 50%;
+  top: 25px;
   left: 15px;
 }
 
@@ -777,7 +838,7 @@ body {
   top: 0px;
   content: "";
   width: 16px;
-  height: 15px;
+  height: 16px;
   border: 1px solid #212121;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -785,7 +846,7 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-form__input:checked + .checkbox__label::before {
+.checkbox-form__input:checked + .checkbox-form__label::before {
   background-color: #2196f3;
   border: none;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");

@@ -6,7 +6,7 @@
       rgba(47, 48, 58, 0.4) 0%,
       rgba(47, 48, 58, 0.4) 100%
     ),
-    url(../images/background.jpg);
+    url(/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -44,6 +44,9 @@
   margin: 0px 15px 0px 15px;
   background-color: $bg-white;
   border-radius: 4px;
+}
+.astronaut-1 {
+  margin: 0px 0px 0px 15px;
 }
 .paragraph-list {
   list-style: none;

@@ -1,5 +1,24 @@
 @import "../utils/variables.scss";
 
+.end__logo--multicolor-txt{
+  color: $font-white;
+}
+.end-icons {
+  padding: 0px 0px 0px 70px;
+
+&__header {
+  line-height: 1.14;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+}
+.end__logo{
+  margin-left:0px;
+}
+
 .address__name {
   color: $font-white;
 }

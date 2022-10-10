@@ -1,9 +1,11 @@
 @import "../utils/variables.scss";
 
 .modal {
+  padding-left: 40px;
+  padding-right: 40px;
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 608px;
   background-color: #ffffff;
   border: 1px solid black;
   border-radius: 4px;
@@ -29,8 +31,9 @@
   visibility: hidden;
 }
 .modal__btn {
+  margin-top: 30px;
+  margin-left: 85px;
   text-align: center;
-  margin: 30px 124px 40px 124px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow, background-color;
@@ -50,12 +53,10 @@
   color: $font-black;
   line-height: 1;
   text-align: center;
-  margin: 40px 40px 12px 40px;
 }
 .modal-form {
-  width: 448px;
+  width: 370px;
   height: 342px;
-  margin: 12px 40px 20px 40px;
 
   &__label {
     position: relative;
@@ -66,7 +67,6 @@
     font-size: 12px;
   }
   &__input {
-    width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -98,7 +98,6 @@
 .modal-form__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
   height: 120px;
   resize: none;
   padding: 12px 16px;
@@ -117,8 +116,8 @@
   border-radius: 50%;
   width: 30px;
   height: 30px;
-  top: 8px;
-  right: 8px;
+  top: 130px;
+  right: 20px;
   background-color: #fff;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -135,7 +134,6 @@
 .checkbox {
   position: relative;
   display: flex;
-  justify-content: center;
   margin-top: 20px;
 }
 .checkbox__label::before {
@@ -169,9 +167,190 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 7;
+  text-align: center;
 }
 .modal__link {
   color: $second-color;
   font-weight: 400;
   font-size: 14px;
 }
+
+// Desktop
+
+// @media screen and (min-width:1200px){
+// .modal {
+//   position: relative;
+//   width: 528px;
+//   height: 581px;
+//   background-color: #ffffff;
+//   border: 1px solid black;
+//   border-radius: 4px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+// }
+// .backdrop {
+//   position: fixed;
+//   display: flex;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #00000033;
+//   align-items: center;
+//   justify-content: center;
+//   transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+//   opacity: 1;
+//   visibility: visible;
+// }
+// .is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+// .modal__btn {
+//   text-align: center;
+//   margin: 30px 124px 40px 124px;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition-property: box-shadow, background-color;
+
+//   &:hover,
+//   &:focus {
+//     background-color: #066981;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-property: box-shadow, background-color;
+//   }
+// }
+
+// .modal__paragraph {
+//   font-weight: 700;
+//   font-size: 20px;
+//   color: $font-black;
+//   line-height: 1;
+//   text-align: center;
+//   margin: 40px 40px 12px 40px;
+// }
+// .modal-form {
+//   width: 448px;
+//   height: 342px;
+//   margin: 12px 40px 20px 40px;
+
+//   &__label {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     margin-bottom: 10px;
+//     font-weight: 400;
+//     font-size: 12px;
+//   }
+//   &__input {
+//     width: 448px;
+//     height: 40px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     padding-left: 50px;
+//     &:focus {
+//       outline: none;
+//       border: 1px solid $second-color;
+//       border-radius: 4px;
+//     }
+//     &:focus + svg {
+//       fill: $second-color;
+//     }
+//   }
+// }
+
+// .modal-form__svg {
+//   width: 20px;
+//   height: 20px;
+//   position: absolute;
+//   top: 25px;
+//   left: 15px;
+// }
+// .modal-form__link {
+//   color: $second-color;
+//   font-weight: 400;
+//   font-size: 14px;
+// }
+
+// .modal-form__comment {
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   border-radius: 4px;
+//   width: 448px;
+//   height: 120px;
+//   resize: none;
+//   padding: 12px 16px;
+
+//   &:focus {
+//     outline: none;
+//     border: 1px solid $second-color;
+//     border-radius: 4px;
+//   }
+// }
+
+// .btn-close {
+//   position: absolute;
+//   color: $font-black;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 50%;
+//   width: 30px;
+//   height: 30px;
+//   top: 8px;
+//   right: 8px;
+//   background-color: #fff;
+//   transition-property: background-color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover {
+//     color: $font-white;
+//     background-color: $second-color;
+//     transition-property: background-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+// }
+// .checkbox {
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   margin-top: 20px;
+// }
+// .checkbox__label::before {
+//   display: block;
+//   position: absolute;
+//   left: 12px;
+//   top: 0px;
+//   content: "";
+//   width: 16px;
+//   height: 15px;
+//   border: 1px solid #212121;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .checkbox__input:checked + .checkbox__label::before {
+//   background-color: $second-color;
+//   border: none;
+//   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='16' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E");
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: center;
+//   width: 16px;
+//   height: 16px;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+// .checkbox__input {
+//   appearance: none;
+// }
+// .checkbox__label {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1, 7;
+// }
+// .modal__link {
+//   color: $second-color;
+//   font-weight: 400;
+//   font-size: 14px;
+// }
+// }

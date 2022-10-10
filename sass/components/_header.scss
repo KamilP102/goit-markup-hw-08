@@ -1,5 +1,5 @@
 @import "../utils/variables.scss";
-
+//// Mobile
 .multicolor--txt {
   color: $second-color;
 }
@@ -15,6 +15,82 @@
 align-items: center;
 justify-content: space-between;
 }
+//////Tablet
+@media screen and (min-width:768px){
+  .container{
+    width:768px;
+    padding:0px 15px;
+    margin:0 auto;
+  }
+  .nav {
+padding-left:80px;
+margin:0px;
+  position: relative;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+
+&__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: $font-black;
+  text-decoration: none;
+  padding: 0px 23px 0px 23px;
+}
+  &__link:hover,
+  &__link:focus {
+    color: $second-color;
+  }
+
+  &__active-cur::after {
+  color: $second-color;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  background-color:$second-color;
+  left:20px;
+  top: 45px;
+  border-radius: 4px;
+}
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+
+&__link {
+  display: flex;
+  flex-direction: row-reverse;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color:$primary-color;
+  padding: 0px 25px 0px 10px;
+}
+}
+.contact-list__icon {
+  margin: 0px 10px 0px 0px;
+}
+.contact-list__item {
+  padding-bottom:10px;
+  
+}
+.contact-list__link:hover .contact-list__icon {
+  fill: $second-color;
+}
+.contact-list__link:hover{
+  color: $second-color;
+}
+}
+
+
 
 
 

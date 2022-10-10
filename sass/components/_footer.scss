@@ -1,4 +1,7 @@
 @import "../utils/variables.scss";
+
+/////Mobile////
+
 .end-container{
   text-align: center;
 }
@@ -46,7 +49,7 @@ padding-bottom:60px;
 .newsletter {
 
   &__input {
-    width: 100%;
+    width: 434px;
     height: 50px;
     background-color: $footer-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -87,6 +90,62 @@ padding-bottom:60px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: inset -2px 1px 42px -17px rgba(66, 68, 90, 1);
   }
+}
+
+
+
+////Tablet/////
+
+@media screen and (min-width:768px) {
+  .end-address{
+    display: flex;
+    text-align: left;
+  }
+}
+@media screen and (min-width:768px) {
+.address__contact {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: $primary-color;
+  padding: 9px 0px 9px 0px;
+}
+}
+@media screen and (min-width:768px) {
+.end-container{
+  padding:60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.end-icons {
+
+
+  &__header {
+    line-height: 1.14;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}
+}
+@media screen and (min-width:768px) {
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:60px;
+  padding-left: 100px;
+  
+
+  &__input {
+    width: 450px;
+ 
+  }
+}
 }
 
 

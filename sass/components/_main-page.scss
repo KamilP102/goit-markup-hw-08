@@ -1,5 +1,5 @@
 @import "../utils/variables.scss";
-
+//// Mobile////
 .header-section {
   background-image: linear-gradient(
       0deg,
@@ -9,22 +9,26 @@
     url(/images/mobile/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-size: 480px 400px;
-  width:480px;
-  height:400px;
+  width: 480px;
+  height: 400px;
 }
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
-    .header-section{
-      background-image: url(/images/mobile/bg-mobile@2x.jpg);
-    }
+  .header-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(/images/mobile/bg-mobile@2x.jpg);
   }
-  .header-section{
-    text-align: center;
-    padding-top:88px;
-  
-  }
-  .header-section__header {
+}
+.header-section {
+  text-align: center;
+  padding-top: 88px;
+}
+.header-section__header {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.5;
@@ -34,7 +38,7 @@
 .header-section__btn {
   padding: 10px 41px 10px 42px;
   text-align: center;
-&__btn:hover {
+  &__btn:hover {
     box-shadow: inset -2px 3px 43px 0px rgba(66, 68, 90, 1);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,11 +47,10 @@
 .paragraph-list {
   list-style: none;
   text-align: center;
-  padding:0px;
+  padding: 0px;
 
- &__item {
-  padding-top:30px;
-
+  &__item {
+    padding-top: 30px;
   }
   &__header {
     font-weight: 700;
@@ -63,13 +66,13 @@
   }
 }
 .feats-icon {
-  padding-left:190px;
+  padding-left: 190px;
   background-color: $bg-white;
   width: 100%;
-  height:120px;
+  height: 120px;
 }
-.job{
-  display:none;
+.job {
+  display: none;
 }
 .job__header {
   font-weight: 700;
@@ -79,11 +82,10 @@
   text-align: center;
 }
 .team-photos {
- list-style: none;
- padding-left:0px;
+  list-style: none;
+  padding-left: 0px;
 
   &__item {
-
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -113,12 +115,12 @@
   color: $font-black;
 }
 .clients__list {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px;
-  gap:30px;
-  column-gap:30px;
+  gap: 30px;
+  column-gap: 30px;
 }
 .clients__icons {
   border: 1px solid #afb1b8;
@@ -140,13 +142,131 @@
   border: 1px solid $second-color;
 }
 
+///////Tablet//////
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(/images/tablet/bg_tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: 768px 400px;
+    width: 768px;
+    height: 400px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .header-section {
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 48, 58, 0.4) 0%,
+        rgba(47, 48, 58, 0.4) 100%
+      ),
+      url(/images/tablet/bg_tablet@2x.jpg);
+  }
+}
+@media  screen and (min-width:768px) {
+  
+.paragraph-list {
+  display:flex;
+  flex-wrap: wrap;
+  gap:30px;
+  column-gap:30px;
+  list-style: none;
+  text-align:left;
+  padding: 0px;
 
+  &__item {
+    padding-top: 30px;
+    flex-basis: calc((100% - 2 *30px)/2);
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1em;
+    text-transform: uppercase;
+    color: $font-black;
+  }
 
+  &__txt {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+}
+@media screen and (min-width:768px){
+.feats-icon {
+  padding-left: 140px;
+  background-color: $bg-white;
+  width: 100%;
+  height: 120px;
+}
+}
+@media screen and (min-width:768px){
+.team-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap:30px;
+  column-gap:30px;
 
-
-
-
+  &__item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: 354px;
+    text-align: center;
+    flex-basis: calc((100% - 2 * 30px)/2);
+  }
+}
+}
+@media screen and (min-width:768px){
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875em;
+  color: $font-black;
+  margin: 30px 99px 10px 99px;
+}
+.team__position {
+  font-size: 16px;
+  line-height: 1.1875em;
+}
+.social-icons {
+  margin: 16px 32px 18px 32px;
+}
+}
+@media screen and (min-width:768px){
+ 
+.clients__icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  list-style: none;
+  width: 226px;
+  height: 92px;
+}
+.clients__icon {
+  fill: #afb1b8;
+}
+.clients__icon:hover svg {
+  fill: $second-color;
+}
+.clients__icon:focus svg {
+  fill: $second-color;
+}
+.clients__icons:hover {
+  border: 1px solid $second-color;
+}
+}
 
 
 

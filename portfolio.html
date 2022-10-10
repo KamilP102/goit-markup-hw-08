@@ -23,9 +23,17 @@
         >
         <nav>
           <ul class="nav">
-            <li><a class="nav__link" href="./index.html">Agencja</a></li>
-            <li><a class="nav__link nav__active-cur" href="">Portfolio</a></li>
-            <li><a class="nav__link" href="">Kontakt</a></li>
+            <li>
+              <a class="nav__link nav__active-cur" href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="./portfolio.html"> Portfolio </a>
+            </li>
+            <li>
+              <a class="nav__link" href="">Kontakt</a>
+            </li>
           </ul>
         </nav>
         <ul class="contact-list">
@@ -46,6 +54,25 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -53,22 +80,46 @@
         <div class="container">
           <div class="buttons">
             <ul class="buttons-list">
-              <li><button class="buttons-list__button" type="button">Wszystkie</button></li>
-              <li><button class="buttons-list__button" type="button">Strony</button></li>
-              <li><button class="buttons-list__button" type="button">Aplikacje</button></li>
-              <li><button class="buttons-list__button" type="button">Dizajn</button></li>
-              <li><button class="buttons-list__button" type="button">Marketing</button></li>
+              <li>
+                <button class="buttons-list__button" type="button">
+                  Wszystkie
+                </button>
+              </li>
+              <li>
+                <button class="buttons-list__button" type="button">
+                  Strony
+                </button>
+              </li>
+              <li>
+                <button class="buttons-list__button" type="button">
+                  Aplikacje
+                </button>
+              </li>
+              <li>
+                <button class="buttons-list__button" type="button">
+                  Dizajn
+                </button>
+              </li>
+              <li>
+                <button class="buttons-list__button" type="button">
+                  Marketing
+                </button>
+              </li>
             </ul>
           </div>
           <ul class="img-grid">
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/laptop.jpg"
-                  alt="Laptop Photo"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/laptop-mobile.jpg,
+                      /images/mobile/laptop-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px"
+                  />
+                  <img src="/images/mobile/laptop-mobile.jpg" alt="laptop photo" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -85,12 +136,16 @@
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/koszykówka.jpg"
-                  alt="Dwójka sportowćow grających w koszykówke"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/bb-mobile.jpg,
+                      /images/mobile/bb-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px"
+                  />
+                  <img src="/images/mobile/bb-mobile.jpg" alt="basketball photo" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -101,18 +156,24 @@
                 </div>
               </div>
               <div class="grid-txt">
-                <h3 class="grid-txt__header">Grafika New Orlean vs Golden Star</h3>
+                <h3 class="grid-txt__header">
+                  Grafika New Orlean vs Golden Star
+                </h3>
                 <p class="grid-txt__paragraph">Dizajn</p>
               </div>
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/logo-seafood.jpg"
-                  alt="Logo restauracji The Seafood Restaurant"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/seafood-mobile.jpg,
+                      /images/mobile/seafood-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="/images/mobile/seafood-mobile.jpg" alt="seafood logo" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -129,12 +190,16 @@
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/słuchawki.jpg"
-                  alt="Zdjęcie czarnych słuchawek"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/hp-mobile.jpg,
+                      /images/mobile/hp-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="/images/mobile/hp-mobile.jpg" alt="photo of headphones" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -151,12 +216,16 @@
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/pudełka.jpg"
-                  alt="Zdjęcie dwóch pudełek jedno białe drugie brązowe"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/box-mobile.jpg,
+                      /images/mobile/box-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="/images/mobile/box-mobile.jpg" alt="photo of boxes" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -173,12 +242,16 @@
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/monitor.jpg"
-                  alt="Zdjęcie monitora"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/screen-mobile.jpg,
+                      /images/mobile/screen-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="/images/mobile/screen-mobile.jpg" alt="photo of a monitor" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -195,12 +268,16 @@
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/książka.jpg"
-                  alt="Zdjęcie książki"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/book-mobile.jpg,
+                      /images/mobile/book-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="/images/mobile/book-mobile.jpg" alt="photo of a book" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -217,12 +294,16 @@
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/tag.jpg"
-                  alt="Zdjęcie metki"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/label-mobile.jpg,
+                      /images/mobile/label-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="/images/mobile/label-mobile.jpg" alt="photo of label" />
+                </picture>
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -239,12 +320,17 @@
             </li>
             <li class="img-grid__item">
               <div class="img-grid__overlay">
-                <img
-                  src="./images/notebook.jpg"
-                  alt="Zdjęcie Notebooka"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/mobile/work-mobile.jpg,
+                      /images/mobile/work-mobile@2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img src="/images/mobile/work-mobile.jpg" alt="photo of doing work" />
+                </picture>
+
                 <div class="overlay-hidden">
                   <p class="overlay-hidden__txt">
                     Technocrack jest popularną platformą wykorzystywaną do
@@ -263,25 +349,31 @@
         </div>
       </section>
     </main>
-   <footer class="end">
+    <footer class="end">
       <div class="container end-container">
         <div class="end__address">
           <a class="logo end__logo" href=""
             ><span class="multicolor--txt">Web</span
-            ><span class=" end__logo--multicolor-txt">Studio</span></a
+            ><span class="end__logo--multicolor-txt">Studio</span></a
           >
           <address class="address">
             <p class="address__name">m. Warszawa, Aleje Jerozolimskie 21</p>
             <a class="address__contact" href="mailto:info@example.com.com"
               >info@example.com</a
             >
-            <a class="address__contact" href="tel:+48111111111">+48 111 111 111</a>
+            <a class="address__contact" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
           </address>
         </div>
         <div class="end-icons">
           <p class="end-icons__header">Dołącz do Nas</p>
           <a class="social__icon" href="">
-            <svg class="social__icon social__icon--white icon-instagram" width="44" height="44">
+            <svg
+              class="social__icon social__icon--white icon-instagram"
+              width="44"
+              height="44"
+            >
               <use
                 href="./images/icons.svg#icon-instagram-2"
                 width="20"
@@ -292,7 +384,11 @@
             </svg>
           </a>
           <a class="social__icon" href="">
-            <svg class="social__icon social__icon--white icon-twitter" width="44" height="44">
+            <svg
+              class="social__icon social__icon--white icon-twitter"
+              width="44"
+              height="44"
+            >
               <use
                 href="./images/icons.svg#icon-twitter-1"
                 width="20"
@@ -303,7 +399,11 @@
             </svg>
           </a>
           <a class="social__icon" href="">
-            <svg class="social__icon social__icon--white icon-facebook" width="44" height="44">
+            <svg
+              class="social__icon social__icon--white icon-facebook"
+              width="44"
+              height="44"
+            >
               <use
                 href="./images/icons.svg#icon-facebook-1"
                 width="20"
@@ -314,7 +414,11 @@
             </svg>
           </a>
           <a class="social__icon" href="">
-            <svg class="social__icon social__icon--white icon-linkedin" width="44" height="44">
+            <svg
+              class="social__icon social__icon--white icon-linkedin"
+              width="44"
+              height="44"
+            >
               <use
                 href="./images/icons.svg#icon-linkedin-1"
                 width="20"
@@ -326,20 +430,72 @@
           </a>
         </div>
         <form class="newsletter" name="newsletter-sign-in">
-          <label class="newsletter__label"> 
-            Zapisz się do newslettera
-          </label>
-          <input class="newsletter__input" type="email" name="email" placeholder="Email" />
-          <button class=" button newsletter__btn" type="submit">Zapisz się
+          <label class="newsletter__label"> Zapisz się do newslettera </label>
+          <input
+            class="newsletter__input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <button class="button newsletter__btn" type="submit">
+            Zapisz się
             <svg class="newsletter__icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"
-              width="24"
-              height="24">
-            </use>
+              <use
+                href="./images/icons.svg#icon-icon-send"
+                width="24"
+                height="24"
+              ></use>
             </svg>
           </button>
         </form>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div>
+        <div>
+          <ul class="mobile-menu">
+            <li><a href="/index.html" class="link">Agencja</a></li>
+            <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+            <li><a href="" class="link">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__mail" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">Instagram</li>
+            <li class="mobile-social__item">Twitter</li>
+            <li class="mobile-social__item">Facebook</li>
+            <li class="mobile-social__item">LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+      <script src="./js/mobile-menu.js"></script>
+    </div>
   </body>
 </html>

@@ -1,5 +1,6 @@
 @import "../utils/variables.scss";
 
+
 .buttons {
   font-weight: 500;
   font-size: 16px;
@@ -9,8 +10,9 @@
 }
 .buttons-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  justify-content: center;
+  justify-content: left;
   padding: 0px;
   margin: 0px;
 
@@ -38,15 +40,10 @@
   }
 }
 .img-grid {
-  display: flex;
   list-style: none;
-  flex-wrap: wrap;
-  padding: 0px;
-  gap: 30px;
-  column-gap: 30px;
+  padding-left: 0px;
 }
 .img-grid__item {
-  flex-basis: calc((100% - 3 * 30px) / 3);
 
   &:hover .overlay-hidden {
     border: 1px solid #eeeeee;
@@ -78,7 +75,7 @@
 .img-grid__overlay {
   overflow: hidden;
   position: relative;
-  width: 370px;
+  width: 450px;
   height: 294px;
 }
 
@@ -103,3 +100,119 @@
   margin: 0px;
 }
 }
+
+
+
+
+
+
+
+
+
+//////Desktop
+/// 
+// @media screen and (min-width:1200px){
+// .buttons {
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.6;
+//   color: $font-black;
+//   padding-bottom: 50px;
+// }
+// .buttons-list {
+//   display: flex;
+//   list-style: none;
+//   justify-content: center;
+//   padding: 0px;
+//   margin: 0px;
+
+//   &__button {
+//     border: none;
+//     font-weight: 500;
+//     font-size: 16px;
+//     padding: 6px 15px 6px 15px;
+//     line-height: 1.6;
+//     width: 121px;
+//     height: 38px;
+//     background-color: $bg-white;
+//     margin: 4px;
+//     border-radius: 4px;
+//   }
+//   &__button:hover,
+//   &__button:focus {
+//     background: $second-color;
+//     color: $font-white;
+//     cursor: pointer;
+//     border: none;
+//     border-radius: 4px;
+//     width: 121px;
+//     height: 38px;
+//   }
+// }
+// .img-grid {
+//   display: flex;
+//   list-style: none;
+//   flex-wrap: wrap;
+//   padding: 0px;
+//   gap: 30px;
+//   column-gap: 30px;
+// }
+// .img-grid__item {
+//   flex-basis: calc((100% - 3 * 30px) / 3);
+
+//   &:hover .overlay-hidden {
+//     border: 1px solid #eeeeee;
+//     box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+//       1px 4px 6px rgb(0 0 0 / 16%);
+//     cursor: pointer;
+//     transform: translateY(0);
+//   }
+// }
+// .overlay-hidden {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(33, 150, 243, 0.9);
+//   top: 0px;
+//   transform: translateY(150%);
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition-duration: 250ms;
+
+// &__txt {
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.5;
+//   letter-spacing: 0.03em;
+//   color: $font-white;
+//   padding: 49px 45px 49px 24px;
+// }
+// }
+// .img-grid__overlay {
+//   overflow: hidden;
+//   position: relative;
+//   width: 370px;
+//   height: 294px;
+// }
+
+
+// .grid-txt {
+//   border-left: 1px solid #eeeeee;
+//   border-right: 1px solid #eeeeee;
+//   border-bottom: 1px solid #eeeeee;
+
+// &__header {
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 2;
+//   color: $font-black;
+//   padding: 20px 24px 20px 24px;
+//   margin: 0px;
+// }
+// &__paragraph {
+//   font-size: 16px;
+//   line-height: 1, 8;
+//   padding: 20px 24px 20px 24px;
+//   margin: 0px;
+// }
+// }
+// }

@@ -1,17 +1,15 @@
 @import "../utils/variables.scss";
-
+.container{
+  width:480px;
+  padding: 30px 15px;
+}
 body {
   font-family: $primary-font, $second-font, sans-serif;
   color: #757575;
-  margin: 0px;
 }
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-.section {
-  padding: 94px 0px 94px 0px;
-}
+// // .section {
+// //   padding: 94px 0px 94px 0px;
+// }
 .end {
   background-color: $footer-color;
 }

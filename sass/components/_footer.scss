@@ -1,24 +1,11 @@
 @import "../utils/variables.scss";
+.end-container{
+  text-align: center;
+}
 
 .end__logo--multicolor-txt {
-  color: $font-white;
+color: $font-white;
 }
-.end-icons {
-  padding: 0px 0px 0px 70px;
-
-  &__header {
-    line-height: 1.14;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 20px;
-  }
-}
-.end__logo {
-  margin-left: 0px;
-}
-
 .address__name {
   color: $font-white;
 }
@@ -31,9 +18,17 @@
   padding: 9px 0px 9px 0px;
   display: block;
 }
-.end-container {
-  display: flex;
-  padding: 60px 0px 80px 0px;
+.end-icons {
+padding-bottom:60px;
+
+  &__header {
+    line-height: 1.14;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
 }
 .newsletter__btn {
   position: relative;
@@ -49,17 +44,16 @@
   }
 }
 .newsletter {
-  margin-left: 78px;
 
   &__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     background-color: $footer-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: $font-white;
-    margin-right: 12px;
     padding-left: 16px;
+    margin-bottom:20px;
   }
   &__icon {
     position: absolute;
@@ -85,6 +79,7 @@
   text-align: left;
   padding: 10px 28px 10px 42px;
   cursor: pointer;
+  margin-bottom:60px;
 
   &:hover,
   &:focus {
@@ -93,3 +88,114 @@
     box-shadow: inset -2px 1px 42px -17px rgba(66, 68, 90, 1);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////desktop//////
+
+// @media screen and (min-width:1200px){
+// .end__logo--multicolor-txt {
+//   color: $font-white;
+// }
+// .end-icons {
+//   padding: 0px 0px 0px 70px;
+
+//   &__header {
+//     line-height: 1.14;
+//     font-weight: 700;
+//     font-size: 14px;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//     margin-bottom: 20px;
+//   }
+// }
+// .end__logo {
+//   margin-left: 0px;
+// }
+
+// .address__name {
+//   color: $font-white;
+// }
+// .address__contact {
+//   text-decoration: none;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1;
+//   color: $primary-color;
+//   padding: 9px 0px 9px 0px;
+//   display: block;
+// }
+// .end-container {
+//   display: flex;
+//   padding: 60px 0px 80px 0px;
+// }
+// .newsletter__btn {
+//   position: relative;
+//   text-align: left;
+//   padding: 10px 28px 10px 42px;
+//   cursor: pointer;
+
+//   &:hover,
+//   &:focus {
+//     transition-duration: 250s;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     box-shadow: inset -2px 1px 42px -17px rgba(66, 68, 90, 1);
+//   }
+// }
+// .newsletter {
+//   margin-left: 78px;
+
+//   &__input {
+//     width: 358px;
+//     height: 50px;
+//     background-color: $footer-color;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     border-radius: 4px;
+//     color: $font-white;
+//     margin-right: 12px;
+//     padding-left: 16px;
+//   }
+//   &__icon {
+//     position: absolute;
+//     left: 148px;
+//     right: 28px;
+//     top: 13px;
+//     bottom: 13px;
+//   }
+//   &__label {
+//     display: flex;
+//     flex-direction: column;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.2;
+//     text-transform: uppercase;
+//     color: $font-white;
+//     padding-top: 12px;
+//     padding-bottom: 20px;
+//   }
+// }
+// .newsletter__btn {
+//   position: relative;
+//   text-align: left;
+//   padding: 10px 28px 10px 42px;
+//   cursor: pointer;
+
+//   &:hover,
+//   &:focus {
+//     transition-duration: 250s;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     box-shadow: inset -2px 1px 42px -17px rgba(66, 68, 90, 1);
+//   }
+// }
+// }

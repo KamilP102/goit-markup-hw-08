@@ -54,7 +54,7 @@ margin:0px;
   height: 4px;
   background-color:$second-color;
   left:20px;
-  top: 45px;
+  top: 35px;
   border-radius: 4px;
 }
 }
@@ -62,11 +62,12 @@ margin:0px;
   display: flex;
   flex-direction: column;
   list-style: none;
-
+  justify-content: flex-end;
 
 &__link {
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -79,8 +80,7 @@ margin:0px;
   margin: 0px 10px 0px 0px;
 }
 .contact-list__item {
-  padding-bottom:10px;
-  
+  align-items: center;
 }
 .contact-list__link:hover .contact-list__icon {
   fill: $second-color;
@@ -90,88 +90,96 @@ margin:0px;
 }
 }
 
-
+@media screen and (min-width:768px){
+  .container{
+    width:768px;
+    padding:0px 15px;
+    margin:0 auto;
+  }
+}
 
 
 
               // Desktop
 
-// @media screen and (min-width:1200px)
-// {
-// .header-page__container {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   border-bottom: 1px solid #ececec;
-//   justify-content: space-around;
-// }
+@media screen and (min-width:1200px)
+{
+.header-page__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+  justify-content: space-around;
+}
+}
+@media screen and (min-width:1200px){
+.nav {
+  position: relative;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 
-// .multicolor--txt {
-//   color: $second-color;
-// }
-// .nav {
-//   position: relative;
-//   display: flex;
-//   list-style: none;
-//   padding: 0px;
-//   margin: 0px;
+&__link {
+  position: relative;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: $font-black;
+  text-decoration: none;
+  padding: 0px 23px 0px 23px;
+}
+  &__link:hover,
+  &__link:focus {
+    color: $second-color;
+  }
 
-// &__link {
-//   position: relative;
-//   width: 100%;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1;
-//   color: $font-black;
-//   text-decoration: none;
-//   padding: 0px 23px 0px 23px;
-// }
-//   &__link:hover,
-//   &__link:focus {
-//     color: $second-color;
-//   }
+  &__active-cur::after {
+  color: $second-color;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 53px;
+  height: 4px;
+  background-color:$second-color;
+  right: 22px;
+  top: 45px;
+  border-radius: 4px;
+}
+}
+}
+@media screen and (min-width:1200px){
+.contact-list {
+  display: flex;
+  list-style: none;
+  margin: 32px 0px 32px 83px;
+  justify-content: flex-end;
 
-//   &__active-cur::after {
-//   color: $second-color;
-//   display: block;
-//   content: "";
-//   position: absolute;
-//   width: 53px;
-//   height: 4px;
-//   background-color:$second-color;
-//   right: 22px;
-//   top: 45px;
-//   border-radius: 4px;
-// }
-// }
-// .contact-list {
-//   display: flex;
-//   list-style: none;
-//   margin: 32px 0px 32px 83px;
-//   justify-content: flex-end;
-
-// &__link {
-//   display: flex;
-//   flex-direction: row-reverse;
-//   align-items: center;
-//   text-decoration: none;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1;
-//   color:$primary-color;
-//   padding: 0px 25px 0px 10px;
-// }
-// }
-// .contact-list__icon {
-//   margin: 0px 10px 0px 0px;
-// }
-// .contact-list__item {
-//   align-items: center;
-// }
-// .contact-list__link:hover .contact-list__icon {
-//   fill: $second-color;
-// }
-// .contact-list__link:hover{
-//   color: $second-color;
-// }
-// }
+&__link {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color:$primary-color;
+  padding: 0px 25px 0px 10px;
+}
+}
+}
+@media screen and (min-width:1200px){
+.contact-list__icon {
+  margin: 0px 10px 0px 0px;
+}
+.contact-list__item {
+  align-items: center;
+}
+.contact-list__link:hover .contact-list__icon {
+  fill: $second-color;
+}
+.contact-list__link:hover{
+  color: $second-color;
+}
+}

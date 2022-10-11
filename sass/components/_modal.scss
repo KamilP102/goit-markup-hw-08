@@ -175,6 +175,17 @@
   font-size: 14px;
 }
 
+
+/////tablet
+
+@media screen and (min-width:768px){
+  .btn-close{
+    top: 130px;
+  right: 165px;
+  }
+}
+
+
 // Desktop
 
 // @media screen and (min-width:1200px){
